@@ -1,0 +1,84 @@
+Control structures (if, for, while), Functions
+Control Structures
+if statement:
+
+Used to execute a block of code based on a condition (if, elif, else).
+Example:
+python
+Copy code
+x = 10
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+for loop:
+
+Iterates over a sequence (list, tuple, string, range) or other iterable objects.
+Example:
+python
+Copy code
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+while loop:
+
+Repeats a block of code as long as a specified condition is true.
+Example:
+python
+Copy code
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+Functions
+Definition: Created using def keyword.
+
+Arguments: Passed to functions as inputs.
+
+Return values: Functions can return values using return statement.
+
+Example:
+
+python
+Copy code
+def greet(name):
+    print("Hello, " + name + "!")
+greet("Alice")
+Default arguments: Assigned default values.
+
+Keyword arguments: Specified with parameter names.
+
+Variable-length arguments: Handled using *args (non-keyworded) and **kwargs (keyworded).
+
+
+Problem 1: Check if a number is even or odd
+print("Check if a number is even or odd")
+
+a = int(input("Enter a number: "))
+
+if a%2 == 0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+Problem 2: Find the largest among three numbers
+print("Find the largest among three numbers")
+
+
+def largest(a,b,c):
+    if a > b and b > c:
+        return a
+    elif b> a and b> c:
+        return b
+    else:
+        return c
+    return max(args)
+
+
+a = 9
+b = 10
+c = 13
+result = largest(a,b,c)
+print("Largest number is: ",  result)
