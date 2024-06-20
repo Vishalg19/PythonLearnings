@@ -66,3 +66,17 @@ print(greeting)
 print(lst)
 print(d)
 print(is_valid)
+
+
+Problem 1: Swap two numbers without a temporary variable;
+Solution: a = 2
+b = 5
+
+a = a + b
+b = a - b
+a = a - b
+
+print(a)
+print(b)
+
+Problem 2:
