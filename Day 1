@@ -1,1 +1,68 @@
+Python: Syntax, Data types, Variables
 
+Syntax
+Indentation: Uses spaces (typically four) to define code blocks.
+Comments:
+Single-line: #
+Multi-line: ''' or """
+Statements: End with newline, can be separated by ;.
+Data Types
+Numeric Types:
+
+int: Integer values (e.g., 10)
+float: Floating-point values (e.g., 3.14)
+complex: Complex numbers (e.g., 1 + 2j)
+Sequence Types:
+
+str: String of characters (e.g., "hello")
+list: Ordered, mutable sequence (e.g., [1, 2, 3])
+tuple: Ordered, immutable sequence (e.g., (1, 2, 3))
+Mapping Type:
+
+dict: Unordered, mutable set of key-value pairs (e.g., {"name": "Alice", "age": 25})
+Set Types:
+
+set: Unordered collection of unique items (e.g., {1, 2, 3})
+frozenset: Immutable set (e.g., frozenset([1, 2, 3]))
+Boolean Type:
+
+bool: Represents True or False
+None Type:
+
+NoneType: Represents absence of value (None)
+Variables
+Assignment: Use = to assign values (e.g., x = 5)
+Dynamic Typing: Variables can change types (e.g., x = 5 then x = "five")
+Naming Rules:
+Start with a letter or underscore
+Can contain letters, digits, underscores
+Case-sensitive
+Reserved Words: Certain words cannot be used as variable names (e.g., if, else, while, True, False, etc.)
+
+
+# Numeric types
+a = 10         # int
+b = 20.5       # float
+c = a + b      # addition
+
+# String type
+s = "Hello"
+greeting = s + " World"  # string concatenation
+
+# List type
+lst = [1, 2, 3]
+lst.append(4)  # adding an item to the list
+
+# Dictionary type
+d = {"name": "Alice", "age": 25}
+d["age"] = 26  # modifying a value in the dictionary
+
+# Boolean type
+is_valid = True
+
+# Printing values
+print(a, b, c)
+print(greeting)
+print(lst)
+print(d)
+print(is_valid)
