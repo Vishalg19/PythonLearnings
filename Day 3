@@ -9,3 +9,28 @@ Solution:
             return nums1[n//2]
         else:
             return (nums1[n//2] + nums1[n//2 -1])/2
+
+
+2nd Question: Print numbers from 1 to 10
+Solution:
+          print("Print numbers from 1 to 10")
+          i=1
+          while(i<=10):
+              print(i)
+              i+=1
+
+3rd Question: Sum of numbers from 1 to 10:
+Solution:
+          print("Sum of numbers from 1 to 10")
+          i,sum = 1,0
+          while(i<=10):
+              sum = sum +i
+              i+=1
+          print(sum)
+
+Learning: Summary:
+Object-Oriented Programming (OOP) revolves around classes and objects.
+Classes define attributes (data) and methods (functions).
+Objects are instances of classes, representing concrete entities.
+Inheritance allows classes to inherit attributes and methods from other classes.
+OOP promotes encapsulation, polymorphism, and code reuse, enhancing modularity and maintainability.
