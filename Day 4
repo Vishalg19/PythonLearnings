@@ -64,3 +64,16 @@ say_hello()
 # Something is happening before the function is called.
 # Hello!
 # Something is happening after the function is called.
+
+
+Generator:
+Generators in Python provide a convenient way to create iterators. They allow you to iterate over data without storing the entire dataset in memory, which is especially useful for large datasets or streams of data. Generators are defined using functions and the yield statement.
+generating the Fibonacci Sequence using Generator
+def fib():
+    a,b =0,1
+    while True:
+        yield a
+        a,b = b, a+b
+fib_gen = fib()
+for _ in range(10):
+    print(next(fib_gen))
