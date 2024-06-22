@@ -1,0 +1,66 @@
+Exception Handling:
+Key Components of Exception Handling
+try: The code that might raise an exception is placed inside the try block.
+except: If an exception occurs in the try block, the except block catches it and executes the code within it.
+else: If no exception occurs, the code inside the else block is executed.
+finally: This block is executed no matter what, whether an exception occurs or not. It is often used for cleanup actions.
+
+Exception Handling
+a = 10
+b = 1
+try:
+    d = a/b
+    print(d)
+    print("Inside Try")
+except ZeroDivisionError:
+    print("Division by Zero is not allowed")
+else:
+    print("Inside Else")
+    
+finally:
+    print("Finally always executes")
+
+
+#with multiple exceptions or Exceptions Classes:
+a = 10
+b = 0
+try:
+    d = a/c
+    print(d)
+    print("Inside Try")
+except (ZeroDivisionError, NameError) as obj:
+    print(obj)
+
+#Handle any type of Exceptions:
+a = 10
+b = 0
+try:
+    d = a/c
+    print(d)
+    print("Inside Try")
+except:
+    print("Handle it")
+
+
+
+
+Decorators:
+A decorator is a function that takes another function as an argument and returns a new function that usually extends the behavior of the original function.
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+# Output:
+# Something is happening before the function is called.
+# Hello!
+# Something is happening after the function is called.
