@@ -1,0 +1,32 @@
+Practice code: 1
+#Print the Fibonacci sequence up to n terms
+
+def fib(n):
+    nums = [0,1]
+    i=1
+    while i<n:
+        a = nums[i-1] + nums[i]
+        nums.append(a)
+        i+=1
+    return nums
+b = fib(10)
+print(b)
+
+
+Practice code: 2
+#Find the sum of digits of a number
+
+def sumDigits(n):
+    sum = 0
+    while n!=0:
+        digit = n%10
+        sum = sum+digit
+        n//=10
+    
+    return sum
+    
+print(sumDigits(123))
+
+
+
+Django Basics Learned...
